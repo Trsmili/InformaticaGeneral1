@@ -1,0 +1,120 @@
+	<!doctype html>
+<html lang="es">
+<head>
+<title> Un verano sin ti </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="estilo.css" rel="stylesheet">
+</head>
+<body>
+
+	 <header>
+	<div class="topnav">
+<ul class="menuhorizontal">
+<li> <a href="index.html">INICIO </a></li>
+<li ><a href="artistas.html"> ARTISTAS </a>
+	<ul class="menuvertical">
+		<li> <a href="badbunny.html"> Bad Bunny </a></li>
+		<li> <a href="taylor.html"> Taylor Swift </a></li>
+		<li> <a href="Drake.html"> Drake </a></li>
+	</ul>
+</li>
+<li><a href="albumes.html"> ALBUMES </a>
+	<ul class="menuvertical">
+	<li><a href="unveranosinti.html">Un verano sin ti</a></li>
+	<li> <a href="harryhouse.html"> Harry's House </a></li>
+	<li> <a href="sour.html"> Sour </a></li>
+</ul>
+</li>
+     <li><a href="quiz.html"> JUGUEMOS </a></li>
+    <li><a href="canciones.html"> CANCIONES </a></li>
+	<li><a href="galeria.html"> GALERIA </a></li>
+	<li><a href="formulario.html"> FORMULARIO </a></li>
+	<li><a href="alumno.html"> ALUMNO </a></li>
+</ul>
+	</div>
+</header>
+<div id="contenedor">
+	<h1 class="h3">Album mas escuchado del 2022 </h1>
+	<h2 class="h3"> Un verano sin ti </h2>
+	<h3 class="h3"> CANCIONES </h3>
+</div>
+	<div class="contenedorSlides">
+  <img class="mySlides" src="img/ojitoslindos-min.jpeg" alt="ojitoslindos">
+  <img class="mySlides" src="img/otroatardecer-min.jpeg" alt="otroatardecer">
+  <img class="mySlides" src="img/party-min.jpeg" alt="party">
+  <img class="mySlides" src="img/agosto-min.jpeg" alt="agosto">
+  <img class="mySlides" src="img/16-min.jpeg" alt="dosmil16">
+  <img class="mySlides" src="img/unverano-min.jpeg" alt="unveranosinti">
+  <img class="mySlides" src="img/yonosoyceloso-min.jpeg" alt="yonosoyceloso" >
+  <img class="mySlides" src="img/mefui-min.jpeg" alt="mefuidevaciones">
+  <img class="mySlides" src="img/aguacero-min.jpeg" alt="aguacero">
+  <img class="mySlides" src="img/unratito-min.jpeg" alt="unratito">
+  <img class="mySlides" src="img/andrea-min.jpeg" alt="andrea">
+  <img class="mySlides" src="img/efecto-min.jpeg" alt="efecto">
+  <img class="mySlides" src="img/lacorriente-min.jpeg" alt="lacorriente">
+  <img class="mySlides" src="img/elapagon-min.jpeg" alt="elapagon">
+  <img class="mySlides" src="img/uncoco-min.jpeg" alt="uncoco">
+  <img class="mySlides" src="img/tarot-min.jpeg" alt="tarot">
+
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<article class="ARDISCOS">
+	<strong><h3 class="h3"> Me porto bonito </h3><br> </strong>
+		<img src="img/meportobonito-min.jpg" alt="meportobonito"><br>
+		<a href="https://youtu.be/saGYMhApaH8" target="_blank"> Escuchar "ME PORTO BONITO"</a>
+</article>
+<article class="ARDISCOS">
+	<strong><h3 class="h3"> Neverita </h3><br></strong>
+		<img src="img/neverita-min.jpg">
+		<img src="img/neverita2-min.jpg"><br>
+		<a href="https://youtu.be/ARWg160eaX4" target="_blank"> Escuchar "NEVERITA" </a>
+</article>
+<article class="ARDISCOS">
+	<strong><h3 class="h3">Moscow Mule</h3> <br></strong>
+		<img src="img/moscowmule-min.jpg">
+		<img src="img/moscowmule2-min.jpg"><br>
+		<a href="https://youtu.be/p38WgakuYDo" target="_blank"> Esuchcar "MOSCOW MULE"</a>
+</article>
+<article class="ARDISCOS">
+	<strong><h3 class="h3"> Titi me pregunto </h3> <br></strong>
+		<img src="img/titimepregunto1-min.jpg">
+	    <img src="img/titimepregunto2-min.jpg"><br>
+	    <a href="https://youtu.be/Cr8K88UcO0s" target="_blank"> Esuchar "TITI ME PREGUNTO"</a>
+</article>
+<article class="ARDISCOS">
+	<strong><h3 class="h3"> Callaita </h3><br></strong>
+	 <img src="img/callaita-min.jpg">
+	 <img src="img/callaita2-min.jpg"><br>
+	 <a href="https://youtu.be/Cr8K88UcO0s" target="_blank">Escuchar "CALLAITA" </a>
+</article>
+<article class="ARDISCOS">
+	<strong><h3 class="h3"> Despues de la playa</h3><br></strong>
+<img src="img/despuesdela-min.jpg" alt="despuesdelaplaya"><br>
+<a href="https://youtu.be/a5rlgE6dcBY" target="_blank"> Esuchcar "DESPUES DE LA PLAYA"</a>
+</article>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>
+</html>

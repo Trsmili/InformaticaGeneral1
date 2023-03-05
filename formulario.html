@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="estilo.css" rel="stylesheet">
+<head>
+<title> Formulario </title>
+</head>
+<body>
+    <header>
+    <div class="topnav">
+        <ul class="menuhorizontal">
+        <li><a href="index.html">INICIO </a></li>
+<li ><a href="artistas.html"> ARTISTAS </a>
+    <ul class="menuvertical">
+        <li> <a href="badbunny.html"> Bad Bunny </a></li>
+        <li> <a href="taylor.html"> Taylor Swift </a></li>
+        <li> <a href="Drake.html"> Drake </a></li>
+    </ul>
+</li>
+<li><a href="albumes.html"> ALBUMES </a>
+    <ul class="menuvertical">
+    <li><a href="unveranosinti.html"> Un verano sin ti </a></li>
+    <li> <a href="harryhouse.html"> Harry's House </a></li>
+    <li> <a href="sour.html"> Sour </a></li>
+</ul>
+</li>
+    <li><a href="quiz.html">JUGUEMOS</a></li>
+    <li><a href="canciones.html"> CANCIONES </a></li>
+    <li><a href="galeria.html"> GALERIA </a></li>
+    <li><a href="alumno.html"> ALUMNO </a></li>
+</ul>
+    </div>
+</header>
+<h3>FORMULARIO </h3>
+    <article id="contenedor">
+<form action="" method="post" name="formulario" id="formulario">
+
+   <label for="nombre" > Nombre* </label><br>
+   <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu apellido"><br><br>
+
+   <label form="apellido" > Apellido* </label><br>
+   <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido"><br> <br>
+
+  
+    <label for="email" >Email*</label><br>
+    <input type="email" id="email" name="email" placeholder="Ingresar email" required><br><br>
+
+    <label for="encuentro" >Genero:</label><br>
+    <input type="checkbox" name="Femenino" id="Femenino">Femenino
+    <input type="checkbox" name="Masculino" id="Masculino"> Masculino
+    <br> <br>
+    
+    <label for="pais"><strong>País: </strong></label><br>
+   <select id="pais" name="pais">
+      <option value="argentina" selected >Argentina</option>
+      <option value="colombia">Colombia</option>
+      <option value="uruguay">Uruguay</option>
+    </select><br><br>
+
+   <label for="comentarios" > Comentarios </label><br> 
+   <textarea name="comentarios" id="comentarios" cols="45" rows="5" placeholder="Dejanos tu opinion sobre la pagina"></textarea><br> <br>
+
+   <input type="button" name="name" id="Enviar" value="Enviar" onclick="ValidarForm()">
+   </form>
+</article>
+  <footer>
+        <p>- Informatica General 2020- Catedra Drelichman- Milagros S Torres -</p>
+     </footer>
+     <script src="formulario.js"></script>
+</body>
+</html>

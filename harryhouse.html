@@ -1,0 +1,98 @@
+ 	<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="estilo.css" rel="stylesheet">
+<title> Harrys's House </title>
+</head>
+<body>
+	 <header>
+	<div class="topnav">
+<ul class="menuhorizontal">
+<li> <a href="index.html">INICIO </a></li>
+<li ><a href="artistas.html"> ARTISTAS </a>
+	<ul class="menuvertical">
+		<li> <a href="badbunny.html"> Bad Bunny </a></li>
+		<li> <a href="taylor.html"> Taylor Swift </a></li>
+		<li> <a href="Drake.html"> Drake </a></li>
+	</ul>
+</li>
+<li><a href="albumes.html"> ALBUMES </a>
+	<ul class="menuvertical">
+	<li><a href="unveranosinti.html">Un verano sin ti</a></li>
+	<li> <a href="harryhouse.html"> Harry's House </a></li>
+	<li> <a href="sour.html"> Sour </a></li>
+</ul>
+</li>
+  <li><a href="quiz.html">JUGUEMOS</a></li>
+  <li><a href="canciones.html"> CANCIONES </a></li>
+	<li><a href="galeria.html"> GALERIA </a></li>
+	<li><a href="formulario.html"> FORMULARIO </a></li>
+	<li><a href="alumno.html"> ALUMNO </a></li>
+</ul>
+	</div>
+</header>
+<div id="contenedor">
+	<h1 class="h3"> Album mas escuchado del 2022 </h1>
+	<h2 class="h3"> Harry's House </h2>
+	<h3 class="h3">CANCIONES</h3>
+</div>
+	<div class="contenedorSlides">
+  <img class="mySlides" src="img/boyfriend-min.jpeg" alt="boyfriend">
+  <img class="mySlides" src="img/cinema-min.jpeg" alt="cinema">
+  <img class="mySlides" src="img/littlefreak-min.jpeg" alt="littlefreak">
+  <img class="mySlides" src="img/matilda-min.jpeg" alt="matilda">
+  <img class="mySlides" src="img/dayligth-min.jpeg" alt="dayligth">
+  <img class="mySlides" src="img/satelite-min.jpeg" alt="satelite">
+  <img class="mySlides" src="img/loveofmylife-min.jpeg" alt="Loveofmylife" >
+  <img class="mySlides" src="img/Grapejuice-min.jpeg" alt="Grapejuice">
+  <img class="mySlides" src="img/keepdriving-min.jpeg" alt="Keepdriving">
+
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<article class="ARDISCOS">
+	<h3 class="h3"> Late nigth talking </h3></a><br>
+	<img src="img/latenigth-min.jpg">
+	<img src="img/latenigth2-min.jpg"><br>
+	<a href="https://youtu.be/4VaqA-5aQTM" target="_blank"> Escuchar "LATE NIGTH TALKING"</a>
+</article>
+<article class="ARDISCOS">
+	<h3 class="h3"> Music for a sushi restaurant</h3><br>
+	<img src="img/musicfor-min.jpg">
+	<img src="img/musicfor2-min.jpg"><br>
+	<a href="https://youtu.be/CiwMDFh_Rog" target="_blank">Escuchar "MUSIC FOR SUSHI RESTAURANT"</a>
+</article>
+<article class="ARDISCOS">
+	<h3 class="h3">As it was</h3><br>
+	<img src="img/asitwas-min.jpg">
+	<img src="img/asitwas2-min.jpg"><br>
+	<a href="https://youtu.be/H5v3kku4y6Q" target="_blank"> Escuchar "AS IT WAS" </a>
+</article>
+<footer>
+        <p>- Informatica General 2020- Catedra Drelichman- Milagros S Torres -</p>
+     </footer>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
